@@ -1,0 +1,9 @@
+{
+  "name": "react-sociable",
+  "version": "0.0.1",
+  "description": "Provides a universal social button component",
+  "main": "index.js",
+  "repository": "https://github.com/castiron/react-sociable.git",
+  "author": "Zach Davis",
+  "license": "MIT"
+}
