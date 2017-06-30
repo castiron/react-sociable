@@ -58,4 +58,4 @@ export default Example;
 
 ____
 ### Credit
-This module is heavily inspired by the [react-social-share module](https://github.com/gsuveti/react-social). It takes a similar approach, opting for higher order components and ES2015 syntax rather than mixins. As such, it should be compatible with React 15.5 and up.
+This module is heavily inspired by the [react-social module](https://www.npmjs.com/package/react-social). It takes a similar approach, opting for higher order components and ES2015 syntax rather than mixins. As such, it should be compatible with React 15.5 and up.
