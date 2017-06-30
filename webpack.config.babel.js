@@ -7,6 +7,7 @@ export default () => ({
     entry: {
         index: path.join(__dirname, 'src/index.js'),
     },
+    target: "node",
 
     output: {
         path: path.join(__dirname, 'dist'),
@@ -37,18 +38,5 @@ export default () => ({
     plugins: [
         // Clean dist folder
         new CleanWebpackPlugin(['dist/*.*']),
-
-        //CommonChunksPlugin will now extract all the common modules from vendor and main bundles
-        //https://medium.com/@adamrackis/vendor-and-code-splitting-in-webpack-2-6376358f1923
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'vendor',
-            minChunks(module) {
-                return module.context && module.context.indexOf('node_modules') !== -1;
-            },
-        }),
-
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'manifest'
-        })
     ]
 });
