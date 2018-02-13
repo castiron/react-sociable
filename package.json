@@ -16,8 +16,8 @@
     "start": "webpack-dev-server --config examples/webpack.config.live.babel.js"
   },
   "peerDependencies": {
-    "react": "~0.14.8 || ^15.0.0",
-    "react-dom": "~0.14.8 || ^15.0.0"
+    "react": "~0.14.8 || ^16.x",
+    "react-dom": "~0.14.8 || ^16.x"
   },
   "dependencies": {
     "query-string": "^4.3.4",
